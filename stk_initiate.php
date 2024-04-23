@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
     for developer/test accounts, this money will be reversed automatically by midnight.
   */
   
-   $PartyA = $_POST['254797076189']; // This is your phone number, 
+   $PartyB = $_POST['254705133720']; // This is your phone number, 
   $AccountReference = '2255';
   $TransactionDesc = 'AVIATOR LTD';
   $Amount = $_POST['amount'];
@@ -70,9 +70,9 @@ if(isset($_POST['submit'])){
     'Timestamp' => $Timestamp,
     'TransactionType' => 'CustomerPayBillOnline',
     'Amount' => $Amount,
-    'PartyA' => $PartyA,
-    'PartyB' => $BusinessShortCode,
-    'PhoneNumber' => $PartyA,
+    'PartyA' => $BusinessShortCode,
+    'PartyB' => $partyB,
+    'PhoneNumber' => $PartyB,
     'CallBackURL' => $CallBackURL,
     'AccountReference' => $AccountReference,
     'TransactionDesc' => $TransactionDesc
