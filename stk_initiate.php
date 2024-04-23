@@ -23,10 +23,10 @@ if(isset($_POST['submit'])){
     for developer/test accounts, this money will be reversed automatically by midnight.
   */
   
-   $PartyA = $_POST['phone']; // This is your phone number, 
+   $PartyA = $_POST['254705133720']; // This is your phone number, 
   $AccountReference = '2255';
-  $TransactionDesc = 'Test Payment';
-  $Amount = $_POST['amount'];
+  $TransactionDesc = 'AVIATOR LTD';
+  $Amount = $_POST['1500'];
  
   # Get the timestamp, format YYYYmmddhms -> 20181004151020
   $Timestamp = date('YmdHis');    
@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
-  $CallBackURL = 'https://radiant-cliffs-56104-b9e91dd2fedb.herokuapp.com//callback_url.php';  
+  $CallBackURL = 'https://radiant-cliffs-56104-b9e91dd2fedb.herokuapp.com/callback_url.php';  
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
