@@ -70,7 +70,7 @@ if(isset($_POST['submit'])){
     'Timestamp' => $Timestamp,
     'TransactionType' => 'CustomerPayBillOnline',
     'Amount' => $Amount,
-    'PartyA' => $PartyBg,
+    'PartyA' => $PartyB,
     'PartyB' => $PartyB,
     'CallBackURL' => $CallBackURL,
     'AccountReference' => $AccountReference,
