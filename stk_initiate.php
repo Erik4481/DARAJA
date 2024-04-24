@@ -71,8 +71,7 @@ if(isset($_POST['submit'])){
     'TransactionType' => 'CustomerPayBillOnline',
     'Amount' => $Amount,
     'PartyA' => $BusinessShortCode,
-    'PartyB' => $partyB,
-    'PhoneNumber' => $PartyB,
+    'PartyB' => $PartyB,
     'CallBackURL' => $CallBackURL,
     'AccountReference' => $AccountReference,
     'TransactionDesc' => $TransactionDesc
